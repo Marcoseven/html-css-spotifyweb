@@ -1,0 +1,63 @@
+/* common_general_rules  */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* common_general_rules  */
+
+/* .debug */
+.debug #site_header {
+	width: 1210px;
+	height: 100px;
+	background-color: #fbf67d;
+}
+
+.debug #site_main {
+	width: 1440px;
+	height: 1000px;
+}
+
+.debug #site_sidebar {
+	width: 230px;
+	height: 1000px;
+	background-color: #6f4fed;
+}
+
+.debug #main_primary {
+	width: 1210px;
+	height: 1000px;
+	background-color: #f98267;
+}
+
+.debug #site_footer {
+	width: 1440px;
+	height: 100px;
+	background-color: #78e85c;
+}
+
+/* /.debug */
+
+/**********
+#SITE_HEADER 
+**********/
+
+/**********
+/#SITE_HEADER 
+**********/
+
+/**********
+#SITE_MAIN
+**********/
+
+/**********
+/#SITE_MAIN 
+**********/
+
+/**********
+#SITE_FOOTER
+**********/
+
+/**********
+/#SITE_FOOTER 
+**********/
