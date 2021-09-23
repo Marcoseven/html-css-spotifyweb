@@ -4,6 +4,20 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+	display: flex;
+}
+
+#site_sidebar img,
+h3,
+i:hover {
+	cursor: pointer;
+}
 /* common_general_rules  */
 
 /* .debug */
@@ -49,9 +63,9 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: calc(100% - 230px);
+	width: calc(100% - 250px);
 	text-align: right;
-	background-color: #171918;
+	background-color: #080b12;
 }
 
 .tool_action > button {
@@ -60,7 +74,7 @@
 	height: 50px;
 	border-radius: 30px;
 	color: #fffef7;
-	background: #171918;
+	background: #080b12;
 	border: 3px solid #fffef7;
 	margin: 0.5rem 3rem;
 }
@@ -81,6 +95,167 @@
 /**********
 #SITE_MAIN
 **********/
+
+/* #site_sidebar */
+#site_sidebar {
+	width: 250px;
+	height: auto;
+	background-color: #000;
+	color: #fff;
+}
+
+.container_sidebar {
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* .sidebar_up */
+.sidebar_up {
+	flex-direction: column;
+}
+
+.sidebar_up > img:nth-child(1) {
+	width: 50%;
+	height: 50%;
+	margin: 1rem;
+}
+
+.sidebar_up > div {
+	padding: 0.5rem;
+}
+
+.sidebar_up img {
+	width: 30px;
+	height: 30px;
+}
+
+.home {
+	position: relative;
+	border-left: 1px solid #adff2f;
+}
+
+#site_sidebar h3 {
+	font-size: 12px;
+	position: absolute;
+	top: 30%;
+	left: 15%;
+}
+
+.search {
+	position: relative;
+}
+
+.search img,
+h3 {
+	color: #707070;
+}
+
+.library {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.library img,
+h3 {
+	color: #707070;
+}
+
+.sidebar_up h2 {
+	font-size: 15px;
+	padding-bottom: 1rem;
+}
+
+.sidebar_up i {
+	font-size: 40px;
+	color: #a3a3a3;
+}
+
+.plus {
+	position: relative;
+}
+
+#h4 {
+	font-size: 12px;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+.playlist {
+	color: #6d6d6d;
+	margin: 0.5rem;
+}
+/* /.sidebar_up */
+
+/* .download */
+.download img {
+	width: 8%;
+	height: 8%;
+}
+
+.download span {
+	color: #717171;
+	font-size: 12px;
+}
+
+#app {
+	position: relative;
+	padding: 0 0 0.5rem 1rem;
+}
+
+#app span {
+	font-size: 12px;
+	position: absolute;
+	top: 10%;
+	left: 18%;
+	padding-bottom: 1rem;
+}
+
+#hr {
+	width: 80%;
+	border: 1px solid #717171;
+	position: absolute;
+	bottom: 0%;
+	right: 12%;
+}
+
+#john {
+	padding: 0.5rem 1rem;
+	position: relative;
+}
+
+#circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #808080;
+	font-size: 50px;
+	position: relative;
+}
+
+#human {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 20px;
+	width: 20px;
+	transform: translate(-50%, -50%);
+}
+
+#john > h3 {
+	font-size: 12px;
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	color: #fff;
+	font-size: 15px;
+}
+/* /.download */
+
+/* /#site_sidebar */
+
+/* #main_primary */
+/* /#main_primary */
 
 /**********
 /#SITE_MAIN 
