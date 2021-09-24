@@ -25,16 +25,9 @@ i,
 /* common_general_rules  */
 
 /* .debug */
-
 .debug #site_main {
 	width: 1440px;
 	height: 1100px;
-}
-
-.debug #tool_action {
-	width: 1210px;
-	height: 100px;
-	background-color: #fbf67d;
 }
 
 .debug #site_sidebar {
@@ -43,7 +36,13 @@ i,
 	background-color: #6f4fed;
 }
 
-.debug #main_primary {
+.debug #tool_action {
+	width: 1210px;
+	height: 100px;
+	background-color: #fbf67d;
+}
+
+.debug .container_right {
 	width: 1210px;
 	height: 1000px;
 	background-color: #f98267;
@@ -63,12 +62,12 @@ i,
 /* .container */
 .container {
 	flex-direction: row;
-	justify-content: space-between;
+	height: calc(100vh - 115px);
 }
 
+/* .sidebar */
 .sidebar {
 	width: 300px;
-	height: calc(100vh - 115px);
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #000;
@@ -224,13 +223,11 @@ h3 {
 /* /.sidebar_down */
 /* /.sidebar */
 
-/* .content_right */
-.content_right {
+/* .container_right */
+.container_right {
 	width: calc(100vw - 300px);
-	height: auto;
 	background-color: #141922;
 	overflow-y: auto;
-	overflow-x: hidden;
 }
 
 /* .tool_action */
@@ -275,8 +272,64 @@ h3 {
 }
 /* /.nav */
 
-/* .film */
-/* /.film */
+/* .album */
+.album {
+	flex-direction: column;
+	margin: 0 0.5rem;
+}
+
+.recently,
+.doe,
+.artists,
+.other {
+	margin: 5rem 0;
+}
+
+/* .recently */
+.col {
+	display: flex;
+	flex-direction: row;
+	margin: 0 -0.5rem;
+}
+
+.card {
+	height: 250px;
+	padding: 0 0.5rem;
+	width: calc(100% / 6);
+}
+
+.card img {
+	width: 100%;
+	height: 100%;
+}
+
+.card .text_card {
+	text-align: center;
+}
+
+.text_card h4 {
+	color: #fff;
+	padding: 0.5rem 0;
+}
+
+.text_card p {
+	color: #7d7f84;
+	padding-top: 0.5rem;
+}
+/* /.recently */
+
+/* .doe */
+.text_col h2 {
+	color: #fff;
+	padding: 0.5rem 0;
+}
+
+.text_col h4 {
+	color: #7d7f84;
+	padding: 0.5rem 0 1rem 0;
+}
+/* /.doe */
+/* /.album */
 
 /* /.content_right */
 
@@ -396,7 +449,7 @@ h3 {
 	width: 25%;
 }
 
-.container_right {
+.container_right_footer {
 	margin-top: 2rem;
 	position: relative;
 }
@@ -409,7 +462,7 @@ h3 {
 }
 
 .row_right {
-	width: 200px;
+	width: 150px;
 	height: 16px;
 	background-color: #5a5a5a;
 	border-radius: 10px;
