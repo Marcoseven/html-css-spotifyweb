@@ -19,18 +19,19 @@ body {
 .row_right,
 #btn > button,
 .image_card,
-.icon_menu_left > i:hover {
+.icon_menu_left > i,
+.icon_menu_right > i:hover {
 	cursor: pointer;
 	color: #fff;
 }
 
 .playlist_header > i:hover,
 .playlist_header > .h4:hover,
-.plus > div:hover {
+.playlist_main a:hover {
 	cursor: pointer;
 	color: #fff;
 }
-/* common_general_rules  */
+/* /common_general_rules  */
 
 /* .debug */
 .debug #site_main {
@@ -69,8 +70,9 @@ body {
 
 /* .container */
 .container_major {
-	flex-direction: row;
+	width: 100%;
 	height: calc(100vh - 100px);
+	flex-direction: row;
 }
 
 .sidebar h3:hover {
@@ -86,6 +88,7 @@ body {
 /* .sidebar */
 .sidebar {
 	width: 250px;
+	height: 100%;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #000;
@@ -204,6 +207,8 @@ body {
 /* .sidebar_down */
 .sidebar_down {
 	margin-bottom: 0.5rem;
+	margin-top: auto;
+	min-height: 100px;
 }
 
 .sidebar_down span {
@@ -275,6 +280,7 @@ body {
 /* .container_right */
 .container_right {
 	width: calc(100vw - 250px);
+	height: 100%;
 	background-color: #141922;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -348,6 +354,12 @@ body {
 	margin: 0 0.5rem;
 }
 
+.recently,
+.doe,
+.artists {
+	width: 100%;
+}
+
 .recently {
 	margin-bottom: 2rem;
 }
@@ -379,11 +391,6 @@ body {
 
 .image_card:hover .play_over > i {
 	display: block;
-}
-
-/* .recently */
-.recently {
-	width: auto;
 }
 
 .col {
@@ -610,10 +617,6 @@ body {
 	padding-left: 30%;
 }
 
-.icon_menu_right i:hover {
-	cursor: pointer;
-}
-
 .row_right:hover .row_minor_right {
 	background-color: #adff2f;
 }
@@ -648,10 +651,6 @@ MEDIA_QUERY
 /* media_query_width_min_320px_max_767px */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	/* .container_right  */
-
-	/* .list_nav > li > a {
-		font-size: 10px;
-	} */
 
 	.recently .col {
 		flex-wrap: wrap;
