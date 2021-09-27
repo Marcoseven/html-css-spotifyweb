@@ -23,14 +23,21 @@
 	<body class="">
 		<!-- #site_main -->
 		<main id="site_main">
-			<div class="container flex">
+			<div class="container_major flex">
 				<!-- .sidebar -->
 				<aside class="sidebar flex">
 					<!-- .sidebar_up -->
 					<div class="sidebar_up flex">
+						<h1 id="title">
+							<img
+								src="./image/spotify/img/logo.svg"
+								alt="logo Spotify con scritto accanto Spotify"
+							/>
+						</h1>
 						<img
-							src="./image/spotify/img/logo.svg"
-							alt="logo Spotify con scritto accanto Spotify"
+							id="logo_spotify"
+							src="./image/spotify/img/favicon.ico"
+							alt="logo Spotify"
 						/>
 						<div class="home">
 							<img
@@ -53,12 +60,13 @@
 							/>
 							<h3>La tua libreria</h3>
 						</div>
-						<div>
-							<h2>PLAYLIST</h2>
-						</div>
+
 						<div class="plus">
-							<i class="fas fa-plus-square"></i>
-							<h4 id="h4">Crea Playlist</h4>
+							<h2>PLAYLIST</h2>
+							<div class="playlist_header">
+								<i class="fas fa-plus-square"></i>
+								<h4 class="h4">Crea Playlist</h4>
+							</div>
 
 							<div class="playlist">Nome Playlist</div>
 							<div class="playlist">Nome Playlist</div>
@@ -82,7 +90,7 @@
 							<div id="hr"></div>
 						</div>
 						<div id="john">
-							<div id="circle">
+							<div id="circle_sidebar_down">
 								<img
 									id="human"
 									src="./image/spotify/img/profile.svg"
@@ -96,43 +104,58 @@
 				</aside>
 				<!-- /.sidebar -->
 
-				<!-- content_right -->
+				<!-- container_right -->
 				<div class="container_right">
 					<div class="tool_action">
-						<button style="font-size: 15px" type="submit">
-							EFFETTUA L'UPGRADE
-						</button>
+						<div id="btn">
+							<button type="submit">EFFETTUA L'UPGRADE</button>
+						</div>
 					</div>
-					<div class="nav">
-						<nav>
-							<ul class="list_nav">
-								<li><a id="link_first" href="#">IN EVIDENZA</a></li>
-								<li><a href="#">PODCAST</a></li>
-								<li><a href="#">CLASSIFICHE</a></li>
-								<li><a href="#">GENERI E MOOD</a></li>
-								<li><a href="#">NUOVE USCITE</a></li>
-								<li><a href="#">MOOD</a></li>
-							</ul>
-						</nav>
-					</div>
+					<nav>
+						<ul class="list_nav">
+							<li>
+								<a href="#">IN EVIDENZA</a>
+								<hr id="link_first" />
+							</li>
+							<li><a href="#">PODCAST</a></li>
+							<li><a href="#">CLASSIFICHE</a></li>
+							<li><a href="#">GENERI E MOOD</a></li>
+							<li><a href="#">NUOVE USCITE</a></li>
+							<li><a href="#">SCOPRI</a></li>
+						</ul>
+					</nav>
 					<div class="album flex">
 						<div class="recently">
+							<div class="text_col">
+								<h2>Recently played</h2>
+							</div>
 							<div class="col">
 								<div class="card">
-									<img
-										src="./image/spotify/img/metal_lifting.jpg"
-										alt="immagine dell'album musicale del gruppo Metallica"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/metal_lifting.jpg"
+											alt="immagine dell'album musicale del gruppo Metallica"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>Heavy Metal</h4>
 										<p>Subtitle</p>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/stranger.jpeg"
-										alt="immagine pubblicitaria della serie televisiva Stranger Things"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/stranger.jpeg"
+											alt="immagine pubblicitaria della serie televisiva Stranger Things"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
+
 									<div class="text_card">
 										<h4>
 											Stranger Things, Vol. <br />1 (a Netflix Original
@@ -142,40 +165,60 @@
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/aquietplace.jpeg"
-										alt="immagine dell'album Quiet Place"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/aquietplace.jpeg"
+											alt="immagine dell'album Quiet Place"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>A quiet place</h4>
 										<p>Subtitle</p>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/split.jpeg"
-										alt="immagine dell'album musicale Split"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/split.jpeg"
+											alt="immagine dell'album musicale Split"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>Split</h4>
 										<p>Subtitle</p>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/cure.jpeg"
-										alt="immagine dell'album musicale A cure of wellness"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/cure.jpeg"
+											alt="immagine dell'album musicale A cure of wellness"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>A cure of wellness</h4>
 										<p>Subtitle</p>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/sinister.jpeg"
-										alt="immagine dell'album Sinister"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/sinister.jpeg"
+											alt="immagine dell'album Sinister"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>Sinister</h4>
 										<p>Subtitle</p>
@@ -190,19 +233,29 @@
 							</div>
 							<div class="col">
 								<div class="card">
-									<img
-										src="./image/spotify/img/radar.jpeg"
-										alt="immagine di album musicale"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/radar.jpeg"
+											alt="immagine di album musicale"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>Release Radar</h4>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/mixdaily.jpeg"
-										alt="immagine di album musicale"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/mixdaily.jpeg"
+											alt="immagine di album musicale"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
 										<h4>Daily Mix 1</h4>
 									</div>
@@ -217,46 +270,38 @@
 							</div>
 							<div class="col">
 								<div class="card">
-									<img
-										src="./image/spotify/img/youg.jpeg"
-										alt="immagine dell'album musicale Young and Beautiful di Lana Del Rey"
-									/>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/youg.jpeg"
+											alt="immagine dell'album musicale Young and Beautiful di Lana Del Rey"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
+									</div>
 									<div class="text_card">
-										<h4>Release Radar</h4>
+										<h4>Lana del Rey</h4>
 									</div>
 								</div>
 								<div class="card">
-									<img
-										src="./image/spotify/img/einaudi.jpeg"
-										alt="immagine dell'album musicale di Einaudi"
-									/>
-									<div class="text_card">
-										<h4>Release Radar</h4>
+									<div class="image_card">
+										<img
+											src="./image/spotify/img/einaudi.jpeg"
+											alt="immagine dell'album musicale di Ludovico Einaudi"
+										/>
+										<div class="play_over">
+											<i class="far fa-play-circle"></i>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="other">
-							<div class="text_col">
-								<h2>Artisti più popolari</h2>
-								<h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-							</div>
-							<div class="col">
-								<div class="card">
-									<img
-										src="./image/spotify/img/player_left.jpg"
-										alt="immagine dell'album musicale degli Hilltop Hoods"
-									/>
 									<div class="text_card">
-										<h4>Hilltop Hoods</h4>
+										<h4>Ludovico Einaudi</h4>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- content_right -->
+				<!-- container_right -->
 			</div>
 		</main>
 		<!-- /#site_main -->
@@ -276,10 +321,10 @@
 							<h3>Sinister</h3>
 							<p>Brano Nome</p>
 						</div>
-					</div>
-					<div class="container_icon">
-						<i class="far fa-heart"></i>
-						<i class="far fa-folder"></i>
+						<div class="icon_menu_left flex">
+							<i class="far fa-heart"></i>
+							<i class="far fa-folder"></i>
+						</div>
 					</div>
 				</div>
 				<!-- /.menu_left -->
@@ -289,16 +334,18 @@
 					<div class="container_up flex">
 						<i class="fas fa-random"></i>
 						<i class="fas fa-arrow-left"></i>
-						<i class="far fa-play-circle"></i>
+						<span id="play_icon"><i class="far fa-play-circle"></i></span>
 						<i class="fas fa-arrow-right"></i>
 						<i class="fas fa-redo"></i>
 					</div>
 					<div class="container_down flex">
-						<div class="weather">0:25</div>
+						<div class="time">0:25</div>
 						<div class="row">
-							<div class="row_minor"></div>
+							<div class="row_minor">
+								<div class="circle_row"></div>
+							</div>
 						</div>
-						<div class="weather">4:35</div>
+						<div class="time">4:35</div>
 					</div>
 				</div>
 				<!-- /.menu_center -->
@@ -306,13 +353,15 @@
 				<!-- .menu_right -->
 				<div class="menu_right">
 					<div class="container_right_footer flex">
-						<div>
+						<div class="icon_menu_right">
 							<i class="fas fa-list"></i>
 							<i class="fas fa-desktop"></i>
 							<i class="fas fa-volume-up"></i>
 						</div>
 						<div class="row_right">
-							<div class="row_minor_right"></div>
+							<div class="row_minor_right">
+								<div class="circle_row"></div>
+							</div>
 						</div>
 					</div>
 				</div>
