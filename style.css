@@ -90,6 +90,7 @@ body {
 	justify-content: space-between;
 	background-color: #000;
 	color: #fff;
+	overflow: hidden;
 }
 
 .sidebar h3,
@@ -155,7 +156,13 @@ body {
 	margin-bottom: 1rem;
 }
 
-.plus h2 {
+.play {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.play h2 {
 	font-size: 15px;
 	padding-bottom: 0.5rem;
 }
@@ -165,20 +172,38 @@ body {
 	color: #a3a3a3;
 }
 
-.plus {
-	position: relative;
+.playlist_header {
+	margin-bottom: 0.5rem;
 }
 
 .playlist_header .h4 {
 	font-size: 12px;
 	position: absolute;
-	top: 16%;
+	top: 18%;
 	left: 25%;
 }
 
-.playlist {
+.playlist_main {
+	overflow-y: auto;
+	scrollbar-color: #fff;
+}
+
+.playlist_main > ul {
+	list-style: none;
+	text-align: left;
+}
+
+.playlist_main a {
 	color: #6d6d6d;
-	margin: 0.5rem;
+	margin: 0.3rem 0;
+	text-decoration: none;
+	display: block;
+}
+/* /.sidebar_up */
+
+/* .sidebar_down */
+.sidebar_down {
+	margin-bottom: 0.5rem;
 }
 
 .sidebar_down span {
@@ -214,7 +239,7 @@ body {
 }
 
 #john {
-	padding: 0.5rem 1rem;
+	padding: 0.5rem;
 	position: relative;
 }
 
@@ -609,7 +634,6 @@ MEDIA_QUERY
 /* media_query_width_min_768px_max_1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 	/* .container_right  */
-
 	.recently .col {
 		flex-wrap: wrap;
 	}
@@ -624,6 +648,10 @@ MEDIA_QUERY
 /* media_query_width_min_320px_max_767px */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	/* .container_right  */
+
+	/* .list_nav > li > a {
+		font-size: 10px;
+	} */
 
 	.recently .col {
 		flex-wrap: wrap;
@@ -643,7 +671,7 @@ MEDIA_QUERY
 		width: 50px;
 	}
 
-	.plus,
+	.play,
 	.sidebar h3 {
 		display: none;
 	}
