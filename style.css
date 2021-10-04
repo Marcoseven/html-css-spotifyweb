@@ -161,7 +161,6 @@ body {
 
 .play {
 	position: relative;
-	height: 100%;
 	overflow: hidden;
 }
 
@@ -176,6 +175,7 @@ body {
 }
 
 .playlist_header {
+	height: 40px;
 	margin-bottom: 0.5rem;
 }
 
@@ -187,6 +187,7 @@ body {
 }
 
 .playlist_main {
+	height: calc(100% - 40px);
 	overflow-y: auto;
 	scrollbar-color: #fff;
 }
@@ -634,8 +635,8 @@ body {
 MEDIA_QUERY
 **********/
 
-/* media_query_width_min_768px_max_1200px */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/* media_query_width_min_992px */
+@media screen and (min-width: 992px) {
 	/* .container_right  */
 	.recently .col {
 		flex-wrap: wrap;
@@ -646,10 +647,10 @@ MEDIA_QUERY
 	}
 	/* /.container_right  */
 }
-/* /media_query_width_min_768px_max_1200px */
+/* /media_query_width_min_992px */
 
-/* media_query_width_min_320px_max_767px */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* media_query_width_min_577px_max_991px */
+@media screen and (min-width: 577px) and (max-width: 991px) {
 	/* .container_right  */
 
 	.recently .col {
@@ -661,10 +662,10 @@ MEDIA_QUERY
 	}
 	/* /.container_right  */
 }
-/* /media_query_width_min_320px_max_767px */
+/* /media_query_width_min_577px_max_991px */
 
-/* media_query_width_min_0px_max_319px */
-@media screen and (max-width: 319px) {
+/* media_query_width_min_0px_max_576px */
+@media screen and (max-width: 576px) {
 	/* .sidebar */
 	.sidebar {
 		width: 50px;
@@ -732,7 +733,7 @@ MEDIA_QUERY
 	}
 	/* /.container_right  */
 }
-/* /media_query_width_min_0px_max_319px */
+/* /media_query_width_min_0px_max_576px */
 
 /**********
 /MEDIA_QUERY
